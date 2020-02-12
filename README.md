@@ -1,7 +1,7 @@
 watchexec-docker
 ================
 
-A docker image that contains s statically linked version of [watchexec](https://github.com/watchexec/watchexec).
+A docker image that contains a statically linked version of [watchexec](https://github.com/watchexec/watchexec).
 
 Usage Example
 =============
