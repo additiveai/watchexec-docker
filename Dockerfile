@@ -1,6 +1,6 @@
 FROM fredrikfornwall/rust-static-builder as build
 RUN git clone https://github.com/watchexec/watchexec.git /build \
- && git checkout 1.23.0 \
+ && git checkout v1.23.0 \
  && /root/build.sh
 
 FROM scratch
