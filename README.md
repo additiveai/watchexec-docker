@@ -1,7 +1,10 @@
+Adapted from [watchexec-docker](https://github.com/recamshak/watchexec-docker)
+
 watchexec-docker
 ================
 
 A docker image that contains a statically linked version of [watchexec](https://github.com/watchexec/watchexec).
+
 
 Usage Example
 =============
@@ -13,7 +16,8 @@ your docker images. The following example shows how to restart a python server o
 version: "2.4"
 services:
   watchexec:
-    image: recamshak/watchexec
+    build: https://github.com/additiveai/watchexec-docker.git
+    image: watchexec
 
   service1:
     image: service1
