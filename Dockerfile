@@ -1,4 +1,4 @@
-FROM rust:1.73 as watchexec-builder
+FROM rust:slim as watchexec-builder
 RUN CARGO_REGISTRIES_CRATES_IO_PROTOCOL=sparse cargo install watchexec-cli
 
 # Sufficient to use scratch here if this is just a holder of the volume. But to
